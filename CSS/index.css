@@ -143,7 +143,7 @@ table {
   font-size: 55px;
   line-height: 60px;
   float: left;
-  padding: 10px 430px 0px 5px;
+  padding: 10px 430px 0px 15px;
 }
 .nav ul {
   display: flex;
@@ -153,7 +153,7 @@ table {
   padding: 20px 10px 0px 0px;
   position: relative;
 }
-.nav ul li a {
+.nav .nav-menu .links {
   display: block;
   color: #8D8741;
   filter: brightness(50%);
@@ -161,16 +161,17 @@ table {
   padding: 24px 14px;
   text-decoration: none;
 }
-.nav ul li a:hover {
-  background-color: #dAAd86;
+.nav .nav-menu .links:hover {
+  color: #659DBD;
+  filter: brightness(100%);
 }
 /* --Login Dropdown Button-- */
 .login-btn {
-  width: 175px;
+  width: 160px;
   height: 32px;
   font-size: 18px;
-  color: #FBEEC1;
-  margin-top: 15px;
+  color: white;
+  margin-top: 10px;
   background-color: #8D8741;
   border-radius: 5px;
 }
@@ -181,8 +182,8 @@ table {
 .login-content {
   display: none;
   position: absolute;
-  background-color: #FBEEC1;
-  min-width: 160px;
+  background-color: #f7f5ef;
+  min-width: 165px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
@@ -193,14 +194,15 @@ table {
   display: block;
 }
 .login-content a:hover {
+  color: #FBEEC1;
   background-color: #659DBD;
-  filter: brightness(130%);
+  filter: brightness(120%);
 }
 .login:hover .login-content {
   display: block;
 }
 .login:hover .login-btn {
-  background-color: #BC986A;
+  background-color: #8D8741;
 }
 .carousel {
   width: 100%;
