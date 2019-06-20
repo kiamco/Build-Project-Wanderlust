@@ -10,31 +10,48 @@
 </head>
 
 <body>
-    <div class="navigation">
-        <div class="logo">Wanderlust</div>
-            <div class="nav-bar">
-               <nav>
-                    <a href="#">Home</a>
-                    <a href="#">About Us</a>
-                    <a href="#">Find A Tour</a>
-                    <a href="#">Become A Guide</a>
-                    <button class="nav-btn">Login</button>
-               </nav> 
+    <header>
+        <div class="navigation">
+            <div class="nav-logo">
+                <p class="logo">Wanderlust</p>
             </div>
-    </div>
+            <div class="nav">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Find A Tour</a></li>
+                    <li><a href="#">Become A Guide</a></li>
+                    <li><button id="login">Login</button>
+                        <ul class="login-dropdown">
+                            <li><a href="#">New Traveler</a></li>
+                            <li><a href="#">Traveler</a></li>
+                            <li><a href="#">Guide</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
 
     <div class="destination">
             <div class="destination-btn">
                 <button class="dest-btn">Destination</button>
+                    <ul class="destination-drop-down">
+                        <li><a href="#">Atlanta</a></li>
+                        <li><a href="#">Miami</a></li>
+                        <li><a href="#">New Orleans</a></li>
+                        <li><a href="#">New York</a></li>
+                        <li><a href="#">San Francisco</a></li>
+                    </ul>
             </div>
             <div class="destination-images">
-                <img id="dest-1" src="images/vertical/andrew-neel-296630-unsplash.jpg" />
-                <img id="dest-2" src="images/vertical/francis-nie-1637298-unsplash.jpg" />
-                <img id="dest-3" src="images/vertical/kyle-sudu-399677-unsplash.jpg" />
-                <img id="dest-4" src="images/vertical/ben-dutton-1453427-unsplash.jpg" />
-                <img id="dest-5" src="images/vertical/roland-denes-1217570-unsplash.jpg" />
+                <img class="dest-img" id="dest-1" src="images/vertical/andrew-neel-296630-unsplash.jpg" />
+                <img class="dest-img" id="dest-2" src="images/vertical/francis-nie-1637298-unsplash.jpg" />
+                <img class="dest-img" id="dest-3" src="images/vertical/kyle-sudu-399677-unsplash.jpg" />
+                <img class="dest-img" id="dest-4" src="images/vertical/ben-dutton-1453427-unsplash.jpg" />
+                <img class="dest-img" id="dest-5" src="images/vertical/roland-denes-1217570-unsplash.jpg" />
             </div>
-        </div>
+    </div>
 </body>
 
 </html>
