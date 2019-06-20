@@ -1,0 +1,36 @@
+.carousel {
+    .width-100();
+    .flex(center, center);
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 16px;
+
+    i.fa.fa-angle-left {
+        position: absolute;
+        left: 5px;
+        cursor: pointer;
+    }
+
+    i.fa.fa-angle-right {
+        position: absolute;
+        right: 5px;
+        cursor: pointer;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: 5rem;
+        display: none;
+        font-family: 'Amatic SC',cursive;
+        padding: 5px;
+        // border: white solid 5px;
+        border-radius: 1rem;
+        
+    }
+
+    .active {
+        display: block;
+    }
+}
