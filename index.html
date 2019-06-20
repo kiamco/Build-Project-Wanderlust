@@ -15,19 +15,31 @@
 </head>
 
 <body>
-
-    <div class="navigation">
-        <div class="logo">Wanderlust</div>
-        <div class="nav-bar">
-            <nav>
-                <a href="#">Home</a>
-                <a href="#">About Us</a>
-                <a href="#">Find A Tour</a>
-                <a href="#">Become A Guide</a>
-                <button class="nav-btn">Login</button>
-            </nav>
+    <header>
+        <div class="navigation">
+            <div class="nav-logo">
+                <p class="logo">Wanderlust</p>
+            </div>
+            <div class="nav">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Find A Tour</a></li>
+                    <li><a href="#">Become A Guide</a></li>
+                    <li>
+                        <div class="login">
+                            <button class="login-btn">Login</button>
+                            <div class="login-content">
+                                <a href="#">New Traveler</a>
+                                <a href="#">Wanderlust Traveler</a>
+                                <a href="#">Wanderlust Guide</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
+    </header>
 
     <!-- <div class="carousel">
         <img src="./Images/Horizontal/silas-hao-1072721-unsplash.jpg" />
@@ -50,17 +62,28 @@
     </div>
 
     <div class="destination">
-        <div class="destination-btn">
-            <button class="dest-btn">Destination</button>
-        </div>
-        <div class="destination-images">
-            <img id="dest-1" src="images/vertical/andrew-neel-296630-unsplash.jpg" />
-            <img id="dest-2" src="images/vertical/francis-nie-1637298-unsplash.jpg" />
-            <img id="dest-3" src="images/vertical/kyle-sudu-399677-unsplash.jpg" />
-            <img id="dest-4" src="images/vertical/ben-dutton-1453427-unsplash.jpg" />
-            <img id="dest-5" src="images/vertical/roland-denes-1217570-unsplash.jpg" />
-        </div>
+            <div class="destination-box">
+                <p class="tag">Find a local guide. Customize your experience. Explore your way.</p>
+                <select class="destination-dropdown"> 
+<!--              <ul class="">-->
+                        <option value="dest">Destination</option>
+                        <option value="atlanta">Atlanta</option>
+                        <option value="miami">Miami</option>
+                        <option value="orleans">New Orleans</option>
+                        <option value="york">New York</option>
+                        <option value="san-fran">San Francisco</option>
+                    
+                </select>
+            </div>
+            <div class="destination-images">
+                <a href="#"><img class="dest-img" id="dest-1" src="images/vertical/andrew-neel-296630-unsplash.jpg" /></a>
+                <a href="#"><img class="dest-img" id="dest-2" src="images/vertical/francis-nie-1637298-unsplash.jpg" /></a>
+                <a href="#"><img class="dest-img" id="dest-3" src="images/vertical/kyle-sudu-399677-unsplash.jpg" /></a>
+                <a href="#"><img class="dest-img" id="dest-4" src="images/vertical/ben-dutton-1453427-unsplash.jpg" /></a>
+                <a href="#"><img class="dest-img" id="dest-5" src="images/vertical/roland-denes-1217570-unsplash.jpg" /></a>
+            </div>
     </div>
+    
 
 
 </body>
