@@ -26,12 +26,15 @@
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Find A Tour</a></li>
                     <li><a href="#">Become A Guide</a></li>
-                    <li><button id="login">Login</button>
-                        <ul class="login-dropdown">
-                            <li><a href="#">New Traveler</a></li>
-                            <li><a href="#">Traveler</a></li>
-                            <li><a href="#">Guide</a></li>
-                        </ul>
+                    <li>
+                        <div class="login">
+                            <button class="login-btn">Login</button>
+                            <div class="login-content">
+                                <a href="#">New Traveler</a>
+                                <a href="#">Wanderlust Traveler</a>
+                                <a href="#">Wanderlust Guide</a>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -59,22 +62,25 @@
     </div>
 
     <div class="destination">
-            <div class="destination-btn">
-                <button class="dest-btn">Destination</button>
-                    <ul class="destination-drop-down">
-                        <li><a href="#">Atlanta</a></li>
-                        <li><a href="#">Miami</a></li>
-                        <li><a href="#">New Orleans</a></li>
-                        <li><a href="#">New York</a></li>
-                        <li><a href="#">San Francisco</a></li>
-                    </ul>
+            <div class="destination-box">
+                <p class="tag">Find a local guide. Customize your experience. Explore your way.</p>
+                <select class="destination-dropdown"> 
+<!--              <ul class="">-->
+                        <option value="dest">Destination</option>
+                        <option value="atlanta">Atlanta</option>
+                        <option value="miami">Miami</option>
+                        <option value="orleans">New Orleans</option>
+                        <option value="york">New York</option>
+                        <option value="san-fran">San Francisco</option>
+                    
+                </select>
             </div>
             <div class="destination-images">
-                <img class="dest-img" id="dest-1" src="images/vertical/andrew-neel-296630-unsplash.jpg" />
-                <img class="dest-img" id="dest-2" src="images/vertical/francis-nie-1637298-unsplash.jpg" />
-                <img class="dest-img" id="dest-3" src="images/vertical/kyle-sudu-399677-unsplash.jpg" />
-                <img class="dest-img" id="dest-4" src="images/vertical/ben-dutton-1453427-unsplash.jpg" />
-                <img class="dest-img" id="dest-5" src="images/vertical/roland-denes-1217570-unsplash.jpg" />
+                <a href="#"><img class="dest-img" id="dest-1" src="images/vertical/andrew-neel-296630-unsplash.jpg" /></a>
+                <a href="#"><img class="dest-img" id="dest-2" src="images/vertical/francis-nie-1637298-unsplash.jpg" /></a>
+                <a href="#"><img class="dest-img" id="dest-3" src="images/vertical/kyle-sudu-399677-unsplash.jpg" /></a>
+                <a href="#"><img class="dest-img" id="dest-4" src="images/vertical/ben-dutton-1453427-unsplash.jpg" /></a>
+                <a href="#"><img class="dest-img" id="dest-5" src="images/vertical/roland-denes-1217570-unsplash.jpg" /></a>
             </div>
     </div>
     
