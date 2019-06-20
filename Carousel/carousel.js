@@ -3,9 +3,7 @@ class Carousel {
         this.el = el;
         this.allImg = this.el.querySelectorAll('img');
         this.currentIndex = 0;
-        this.right.addEventListener('click', this.showRight.bind(this));
         this.allImg[this.currentIndex].style.display = 'block';
-
     }
 
 }
