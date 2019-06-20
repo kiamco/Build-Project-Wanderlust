@@ -140,15 +140,22 @@ table {
   overflow: hidden;
   margin-top: 16px;
 }
-@media (min-width: 1200px) {
-  .carousel {
-    width: 1200px;
-  }
+.carousel i.fa.fa-angle-left {
+  position: absolute;
+  left: 5px;
+  cursor: pointer;
 }
-.carousel img {
-  width: 100%;
+.carousel i.fa.fa-angle-right {
+  position: absolute;
+  right: 5px;
+  cursor: pointer;
+}
+.carousel a {
+  text-decoration: none;
+  color: white;
+  font-size: 4rem;
   display: none;
 }
-.carousel show {
+.carousel .active {
   display: block;
 }
