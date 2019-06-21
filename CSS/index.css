@@ -202,7 +202,7 @@ table {
   display: block;
 }
 .login:hover .login-btn {
-  background-color: #8D8741;
+  background-color: #bdb457;
 }
 .carousel {
   width: 100%;
@@ -367,6 +367,21 @@ table {
   font-size: 18px;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.tour-button {
+  margin: 0.8%;
+  width: 400px;
+  height: 40px;
+  color: #121e24;
+  font-size: 18px;
+  background-color: #659DBD;
+  /*rgb(67, 105, 128);*/
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.tour-button:hover {
+  color: #659DBD;
+  background-color: #121e24;
 }
 footer {
   width: 100%;
