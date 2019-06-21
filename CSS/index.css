@@ -162,3 +162,34 @@ table {
 .carousel .active {
   display: block;
 }
+.ab-container {
+  margin: 10px auto;
+  max-width: 1000px;
+}
+.ab-container .mission {
+  text-align: center;
+}
+.ab-container .mission h1 {
+  margin: 10px 10px;
+  font-size: 2rem;
+}
+.bg-about-img {
+  background: url(/Images/arthur-poulin-96074-unsplash.jpg) center no-repeat;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: none;
+  align-items: none;
+  flex-direction: row;
+}
+.bg-about-img h1 {
+  font-family: 'Amatic SC', cursive;
+  position: relative;
+  right: 5px;
+  font-size: 5rem;
+  background: #FBEEC1;
+  opacity: 0.5;
+}
