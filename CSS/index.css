@@ -262,16 +262,20 @@ table {
   width: 19.76%;
   height: 400px;
 }
-.ab-container {
-  margin: 10px auto;
+.first-ab .ab-container {
+  margin: 20px auto;
+  width: 800px;
   max-width: 1000px;
 }
-.ab-container .mission {
-  text-align: center;
+.first-ab .ab-container .mission {
+  text-align: left;
 }
-.ab-container .mission h1 {
+.first-ab .ab-container .mission h1 {
   margin: 10px 10px;
   font-size: 2rem;
+}
+.first-ab .ab-container .mission p {
+  line-height: 1.5;
 }
 .bg-about-img {
   background: url(/Images/arthur-poulin-96074-unsplash.jpg) center no-repeat;
@@ -281,17 +285,65 @@ table {
   position: relative;
   overflow: hidden;
   display: flex;
-  justify-content: none;
+  justify-content: flex-end;
   align-items: none;
   flex-direction: row;
+  align-items: center;
 }
-.bg-about-img h1 {
+.bg-about-img .description {
+  background: #f1f0b6;
+  opacity: 0.6;
+  margin-right: 72px;
+  height: 200px;
+}
+.bg-about-img .description h1 {
   font-family: 'Amatic SC', cursive;
   position: relative;
   right: 5px;
   font-size: 5rem;
-  background: #FBEEC1;
-  opacity: 0.5;
+  text-align: center;
+  margin: 20px 20px 0;
+  color: #131313;
+  font-weight: 600;
+}
+.second-ab {
+  background: #d3d2ce;
+  height: 440px;
+}
+.second-ab .people {
+  width: 800px;
+  margin: 0 auto;
+}
+.second-ab .people h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 3rem;
+}
+.second-ab .people .person {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.second-ab .people .person img {
+  width: 48%;
+  object-fit: cover;
+  height: 379px;
+  border-radius: 12rem;
+  margin-top: 50px;
+}
+.second-ab .people .person .person-info {
+  width: 48%;
+  margin-top: 125px;
+}
+.person-info h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+#person-2 {
+  flex-flow: row-reverse;
+}
+#bg-person-2 {
+  background: white;
 }
 footer {
   width: 100%;
