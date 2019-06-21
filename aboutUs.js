@@ -1,4 +1,4 @@
-TweenLite.from('.description', 7, {
+TweenLite.from('.description', 15, {
     width: 1000,
     ease: Elastic.easeOut
 });
