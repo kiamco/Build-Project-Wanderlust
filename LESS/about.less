@@ -1,0 +1,105 @@
+.first-ab {
+    .ab-container {
+        margin: 20px auto;
+        width: 800px;
+        max-width: 1000px;
+        ;
+
+        .mission {
+            text-align: left;
+
+            h1 {
+                margin: 10px 10px;
+                font-size: 2rem;
+            }
+
+            p {
+                line-height: 1.5;
+            }
+        }
+
+    }
+}
+
+.bg-about-img {
+    background: url(/Images/arthur-poulin-96074-unsplash.jpg) center no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    .flex(flex-end);
+    align-items: center;
+
+    .description {
+        background: rgb(241, 240, 182);
+        opacity: .6;
+        margin-right: 72px;
+        height: 200px;
+
+        h1 {
+            font-family: 'Amatic SC', cursive;
+            position: relative;
+            right: 5px;
+            font-size: 5rem;
+            text-align: center;
+            margin: 20px 20px 0;
+            color: rgb(19, 19, 19);
+            ;
+            font-weight: 600;
+
+        }
+    }
+}
+
+.second-ab {
+    background: rgb(211, 210, 206);
+    height: 440px;
+    ;
+
+    .people {
+        width: 800px;
+        margin: 0 auto;
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 3rem;
+
+        }
+
+        .person {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+
+            img {
+                width: 48%;
+                object-fit: cover;
+                height: 379px;
+                border-radius: 12rem;
+                margin-top: 50px;
+            }
+
+           .person-info {
+                width: 48%;
+                margin-top: 125px;
+            }
+        }
+    }
+}
+
+.person-info{
+    h2{
+        font-size: 3rem;
+        margin-bottom: 10px;
+    }
+}
+
+#person-2{
+    flex-flow: row-reverse;
+}
+
+#bg-person-2{
+    background: white;
+}
