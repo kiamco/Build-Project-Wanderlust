@@ -18,7 +18,7 @@
     <header>
         <div class="navigation">
             <div class="nav-logo">
-                <p class="logo">Wanderlust</p>
+                <a href="index.html"><h1 class="logo">Wanderlust</h1></a>
             </div>
             <div class="nav">
                 <ul class="nav-menu">
@@ -45,20 +45,28 @@
     <div>
         <form action="">
             <div class='register-box'>
-                <h1>Register Here</h1>
-                <p>Fill out this form</p>
+                <div class="tagline">
+                    <h1>Register Here</h1>
+                    <p> Become a Wanderlust Guide and create wonderful experiences with travelers to your special city.</p>
+                    <p>Have a unique idea? Tell us all about it.</p>
+                </div>  
+                <div class="fill">
+                    <p>Fill out this form</p>
+                </div>  
+                <div class="form-input">
+                    <label for="email"><b>Email</b></label> <br>
+                    <input type="text" placeholder="Enter Email" name="email" required> <br>
 
-                <label for="email"><b>Email</b></label> <br>
-                <input type="text" placeholder="Enter Email" name="email" required> <br>
+                    <label for="psw"><b>Password</b></label><br>
+                    <input type="password" placeholder="Enter Password" name="psw" required> <br>
 
-                <label for="psw"><b>Password</b></label><br>
-                <input type="password" placeholder="Enter Password" name="psw" required> <br>
-
-                <label for="psw-repeat"><b>Repeat Password</b></label><br>
-                <input type="password" placeholder="Repeat Password" name="psw-repeat" required> <br>
-
-                <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-                <button type="submit" class="registerbtn">Register</button>
+                    <label for="psw-repeat"><b>Repeat Password</b></label><br>
+                    <input type="password" placeholder="Repeat Password" name="psw-repeat" required> <br>
+                </div>
+                <div class="register-button">
+                    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                    <a href="#"><button type="submit" class="registerbtn">Register</button></a>
+                </div>
             </div>
 
             <div class="container signin">
