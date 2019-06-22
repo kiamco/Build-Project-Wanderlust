@@ -267,8 +267,19 @@ table {
   width: 800px;
   max-width: 1000px;
 }
+@media (max-width: 480px) {
+  .first-ab .ab-container {
+    margin: auto 24px;
+  }
+}
 .first-ab .ab-container .mission {
   text-align: left;
+}
+@media (max-width: 480px) {
+  .first-ab .ab-container .mission {
+    text-align: center;
+    width: 300px;
+  }
 }
 .first-ab .ab-container .mission h1 {
   margin: 10px 10px;
@@ -278,7 +289,7 @@ table {
   line-height: 1.5;
 }
 .bg-about-img {
-  background: url(/Images/arthur-poulin-96074-unsplash.jpg) center no-repeat;
+  background: url(/Images/arthur-poulin-96074-unsplash.jpg) center no-repeat, rgba(160, 158, 73, 0.76);
   background-size: cover;
   height: 400px;
   width: 100%;
@@ -296,6 +307,11 @@ table {
   margin-right: 72px;
   height: 200px;
 }
+@media (max-width: 480px) {
+  .bg-about-img .description {
+    margin-right: 26px;
+  }
+}
 .bg-about-img .description h1 {
   font-family: 'Amatic SC', cursive;
   position: relative;
@@ -310,6 +326,12 @@ table {
   background: #d3d2ce;
   height: 440px;
 }
+@media (max-width: 480px) {
+  .second-ab {
+    max-width: 480px;
+    margin: auto 10px;
+  }
+}
 .second-ab .people {
   width: 800px;
   margin: 0 auto;
@@ -321,8 +343,13 @@ table {
 }
 .second-ab .people .person {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row no-wrap;
   justify-content: space-between;
+}
+@media (max-width: 480px) {
+  .second-ab .people .person {
+    flex-flow: column wrap;
+  }
 }
 .second-ab .people .person img {
   width: 48%;
@@ -331,9 +358,23 @@ table {
   border-radius: 12rem;
   margin-top: 50px;
 }
+@media (max-width: 480px) {
+  .second-ab .people .person img {
+    width: 15%;
+    height: 119px;
+    margin-left: 121px;
+  }
+}
 .second-ab .people .person .person-info {
   width: 48%;
   margin-top: 125px;
+}
+@media (max-width: 480px) {
+  .second-ab .people .person .person-info {
+    margin: 10px auto auto 10px;
+    text-align: center;
+    width: 40%;
+  }
 }
 .person-info h2 {
   font-size: 3rem;
@@ -341,6 +382,11 @@ table {
 }
 #person-2 {
   flex-flow: row-reverse;
+}
+@media (max-width: 480px) {
+  #person-2 {
+    flex-flow: column wrap;
+  }
 }
 #bg-person-2 {
   background: white;

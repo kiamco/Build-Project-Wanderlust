@@ -3,10 +3,18 @@
         margin: 20px auto;
         width: 800px;
         max-width: 1000px;
-        ;
+        @media @mobile{
+            margin: auto 24px;
+        }
 
         .mission {
             text-align: left;
+
+            @media @mobile {
+                text-align: center;
+                width: 300px;
+
+            }
 
             h1 {
                 margin: 10px 10px;
@@ -37,6 +45,9 @@
         margin-right: 72px;
         height: 200px;
 
+        @media @mobile{
+            margin-right:26px;
+        }
         h1 {
             font-family: 'Amatic SC', cursive;
             position: relative;
@@ -55,7 +66,12 @@
 .second-ab {
     background: rgb(211, 210, 206);
     height: 440px;
-    ;
+
+
+   @media @mobile {
+      max-width: 480px;
+      margin: auto 10px;
+   }
 
     .people {
         width: 800px;
@@ -70,8 +86,12 @@
 
         .person {
             display: flex;
-            flex-flow: row wrap;
+            flex-flow: row no-wrap;
             justify-content: space-between;
+
+            @media @mobile{
+                flex-flow:column wrap;
+            }
 
             img {
                 width: 48%;
@@ -79,27 +99,44 @@
                 height: 379px;
                 border-radius: 12rem;
                 margin-top: 50px;
+
+                @media @mobile{
+                    width: 15%;
+                    height: 119px;
+                    margin-left: 121px;
+                }
+
             }
 
-           .person-info {
+            .person-info {
                 width: 48%;
                 margin-top: 125px;
+                
+                @media @mobile{
+                    margin: 10px auto auto 10px;
+                    text-align: center;
+                    width: 40%;
+                }
             }
         }
     }
 }
 
-.person-info{
-    h2{
+.person-info {
+    h2 {
         font-size: 3rem;
         margin-bottom: 10px;
     }
 }
 
-#person-2{
+#person-2 {
     flex-flow: row-reverse;
+
+    @media @mobile{
+        flex-flow: column wrap;
+    }
 }
 
-#bg-person-2{
+#bg-person-2 {
     background: white;
 }
