@@ -1,3 +1,15 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+
+    @media (min-width: 800px) and (max-width: 1000px) {
+        margin: 0 auto;
+    }
+
+    @media (max-width: 500px) {
+        margin: 0 auto;
+    }
+}
 .navigation {
     width: 100%;
     height: 60px;
@@ -9,11 +21,12 @@
     font-size: 55px;
     line-height: 60px;
     float: left;
-    padding: 10px 32% 0px 15px;
+    padding: 10px 15% 0px 1%;
 }
 
 .nav ul {
-    display: flex;  
+    display: flex; 
+    justify-content: space-evenly; 
 }
 
 .nav ul li {
@@ -27,7 +40,7 @@
     color: @darkGreen;
     filter: brightness(50%);
     font-size: 18px;
-    padding: 24px 14px;
+    padding: 24px 0px 10px 10px ;
     text-decoration: none;
 }
 
@@ -36,13 +49,22 @@
         filter: brightness(100%);
     }
 
+span {
+    @media (min-width: 800px) and (max-width: 1000px) {
+        display: none;
+    }
+
+    @media (max-width: 500px) {
+        display: none;   
+    }
+}
 /* --Login Dropdown Button-- */
 .login-btn {
     width: 160px;
     height: 32px;
     font-size: 18px;
     color: white;
-    margin-top: 10px;
+    margin: 10px 0px 0px 20px;
     background-color: @darkGreen;
     border-radius: 5px;
 }
@@ -50,6 +72,7 @@
 .login {
     position: relative;
     display: inline-block;
+    text-align: right;
 }
 
 .login-content {
