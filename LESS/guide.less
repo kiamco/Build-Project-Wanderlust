@@ -1,0 +1,60 @@
+.registration-container {
+display: flex;
+flex-flow: column;
+align-items: center;
+width: 100%;
+    // text-align: center;
+    .register-box {
+        margin: 40px 10px;
+        background: @main-blue;
+        max-width: 400px;
+        height: auto;
+        border-radius: 1rem;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+
+        input,
+        label {
+            width: 90%;
+            margin: 10px 10px 0px;;
+        }
+
+        input {
+            height: 40px;
+            border-radius: .3rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            text-align: center;
+            line-height: 1;
+            font-family: 'Amatic SC',
+            cursive;
+        }
+
+        p{
+            text-align: center;
+        }
+
+        .submit {
+            display: flex;
+            justify-content: center;
+            flex-flow: column;
+            margin: auto 10px;
+            align-items: center;
+            
+            button {
+                padding: 10px;
+                min-width: 300px;
+                border-radius: .6rem;
+                border: 1px solid @main-blue;
+                background: @darkGreen;
+                margin: 10px;
+                cursor: pointer;
+
+            }
+        }
+    }
+
+}
