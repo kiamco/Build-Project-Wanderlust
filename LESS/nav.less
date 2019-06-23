@@ -1,6 +1,5 @@
 .container {
     width: 100%;
-    margin: 0 auto;
 
     @media (min-width: 800px) and (max-width: 1000px) {
         margin: 0 auto;
@@ -21,7 +20,11 @@
     font-size: 55px;
     line-height: 60px;
     float: left;
-    padding: 10px 15% 0px 1%;
+    padding: 10px 13% 0px 1%;
+
+    @media (max-width: 500px) {
+        padding: 10px 8px;
+    }
 }
 
 .nav ul {
@@ -40,8 +43,12 @@
     color: @darkGreen;
     filter: brightness(50%);
     font-size: 18px;
-    padding: 24px 0px 10px 10px ;
+    padding: 24px 0px 10px 5px ;
     text-decoration: none;
+
+    @media (max-width: 500px) {
+        display: none;   
+    }
 }
 
     .nav .nav-menu .links:hover {
@@ -58,6 +65,7 @@ span {
         display: none;   
     }
 }
+
 /* --Login Dropdown Button-- */
 .login-btn {
     width: 160px;
@@ -67,11 +75,15 @@ span {
     margin: 10px 0px 0px 20px;
     background-color: @darkGreen;
     border-radius: 5px;
+
+    @media (max-width: 500px) {
+        padding-left: 0px; 
+    }
 }
 
 .login {
     position: relative;
-    display: inline-block;
+    display: block;
     text-align: right;
 }
 
@@ -79,7 +91,7 @@ span {
     display: none;
     position: absolute;
     background-color: rgb(247, 245, 239);
-    min-width: 165px;
+    min-width: 145px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -88,11 +100,12 @@ span {
         color: black;
         padding: 12px 16px;
         text-decoration: none;
-        display: block;
+        display: inline-block;
     }
 
         .login-content a:hover {
             color: @dirt-grey;
+            min-width: 145px;
             background-color: @main-blue;
             filter: brightness(120%);
         }

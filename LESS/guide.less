@@ -10,29 +10,39 @@
     }*/
 }
 
+.border-color {
+    width: 100%;
+    height: 20px; 
+    margin: 20px auto;
+    border-top: 3px solid rgb(73, 71, 33);
+    border-bottom: 3px solid rgb(73, 71, 33); 
+    background-color: #8D8741;
+    filter: brightness(130%); 
+}
+
+.border {
+    visibility: hidden;
+}
 .register-box {
     width: 100%;
-    border-top: 3px solid #8D8741;
-    filter: brightness(130%); 
-    margin-top: 20px;
 }
 
 .register {
     font-size: 2rem;
     color: @darkGreen;
-    filter: brightness(30%);
+    filter: brightness(50%);
     text-align: center;
-    margin: 30px;
+    margin: 40px 0px 30px 0px;
 }
 .guide-images {
     width: 100%;
-    padding-left: 1.2%;
+    /*border: 1px solid pink;*/
 }
 
 .guide-img {
     width: 12%;
     height: 150px; 
-    margin: 2%;
+    margin: 1.9%;
     text-align: center;
     border-radius: 10px;
 
@@ -42,4 +52,53 @@
         height: 100px;
         margin: 1%;
     }
+
+    @media (max-width: 500px) {
+        margin: 0 auto;
+        width: 15%;
+        height: 70px;
+        text-align: center;
+    }
 }
+
+.tagline {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+.fill {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 1%;
+}
+
+.form-input {
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.register-button {
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 2%;
+}
+
+.registerbtn {
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 2%;
+    width: 160px;
+    height: 32px;
+    color: white;
+    background-color: rgb(18, 30, 36);;
+    border-radius: 5px;
+}
+
+.signin {
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 1%;
+}
+
