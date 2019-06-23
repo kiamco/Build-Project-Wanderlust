@@ -149,27 +149,31 @@ table {
 .navigation {
   width: 100%;
   height: 60px;
+  margin: 0 auto;
   background-color: white;
+  border: 1px solid red;
 }
 .nav-logo .logo {
   color: #8D8741;
-  font-size: 55px;
+  font-size: 3.5rem;
   line-height: 60px;
   float: left;
   padding: 10px 13% 0px 1%;
 }
 @media (max-width: 500px) {
   .nav-logo .logo {
+    font-size: 2.5rem;
     padding: 10px 8px;
   }
 }
 .nav ul {
   display: flex;
   justify-content: space-evenly;
+  border: 1px solid red;
 }
 .nav ul li {
   list-style: none;
-  padding: 20px 10px 0px 0px;
+  padding: 20px 5px 0px 0px;
   position: relative;
 }
 .nav .nav-menu .links {
@@ -177,7 +181,7 @@ table {
   color: #8D8741;
   filter: brightness(50%);
   font-size: 18px;
-  padding: 24px 0px 10px 5px ;
+  padding: 24px 0px 10px 0px ;
   text-decoration: none;
 }
 @media (max-width: 500px) {
@@ -302,6 +306,47 @@ table {
 .dest-img {
   width: 19.76%;
   height: 400px;
+}
+@media (max-width: 1000px) {
+  .dest-img {
+    margin: 0 auto;
+    width: 19.65%;
+    height: 290px;
+  }
+}
+@media (min-width: 800px) and (max-width: 999px) {
+  .dest-img {
+    margin: 0 auto;
+    width: 19.55%;
+    height: 275px;
+  }
+}
+@media (max-width: 500px) {
+  .dest-img {
+    margin: 0 auto;
+    width: 32.7%;
+    height: 275px;
+  }
+}
+@media (min-width: 800px) and (max-width: 1000px) {
+  #dest-1 {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 500px) {
+  #dest-1 {
+    display: none;
+  }
+}
+@media (min-width: 800px) and (max-width: 1000px) {
+  #dest-2 {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 500px) {
+  #dest-2 {
+    display: none;
+  }
 }
 .first-ab .ab-container {
   margin: 20px auto;
@@ -435,7 +480,7 @@ table {
 .tour-content {
   background-image: url("/Images/andrew-stutesman-643239-unsplash.jpg");
   background-color: #f1f0b6;
-  height: 19.5rem;
+  height: 18.3rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -443,6 +488,21 @@ table {
   text-align: center;
   margin-top: 1rem;
   padding: 8%;
+}
+@media (max-width: 1000px) {
+  .tour-content {
+    height: 20.5rem;
+  }
+}
+@media (min-width: 800px) and (max-width: 999px) {
+  .tour-content {
+    height: 22.5rem;
+  }
+}
+@media (max-width: 500px) and (max-width: 799px) {
+  .tour-content {
+    height: 27rem;
+  }
 }
 .tour-text {
   opacity: 0.8;
@@ -472,13 +532,6 @@ table {
 }
 .container .guide {
   width: 100%;
-  /* @media (min-width: 800px) and (max-width: 1000px) {
-        margin: 0 auto;
-    }
-
-    @media (max-width: 500px) {
-        margin: 0 auto;
-    }*/
 }
 .border-color {
   width: 100%;
@@ -503,8 +556,9 @@ table {
   margin: 40px 0px 30px 0px;
 }
 .guide-images {
-  width: 100%;
-  /*border: 1px solid pink;*/
+  width: 98%;
+  padding-left: 1.9%;
+  border: 1px solid red;
 }
 .guide-img {
   width: 12%;
@@ -512,13 +566,22 @@ table {
   margin: 1.9%;
   text-align: center;
   border-radius: 10px;
+  border: 1px solid #494721;
 }
-@media (min-width: 800px) and (max-width: 1000px) {
+@media (max-width: 1000px) {
   .guide-img {
-    margin: 0 auto;
-    width: 14%;
+    width: 13.8%;
+    height: 120px;
+    margin: 1%;
+    text-align: center;
+  }
+}
+@media (min-width: 800px) and (max-width: 999px) {
+  .guide-img {
+    width: 13.55%;
     height: 100px;
     margin: 1%;
+    text-align: center;
   }
 }
 @media (max-width: 500px) {
@@ -572,6 +635,7 @@ footer {
   filter: brightness(130%);
   display: flex;
   justify-content: space-evenly;
+  border: 1px solid red;
 }
 footer a {
   color: #8D8741;

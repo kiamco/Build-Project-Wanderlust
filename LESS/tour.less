@@ -1,7 +1,7 @@
 .tour-content {
     background-image: url("/Images/andrew-stutesman-643239-unsplash.jpg");
     background-color: rgb(241, 240, 182);
-    height: 19.5rem;
+    height: 18.3rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -9,10 +9,26 @@
     text-align: center;
     margin-top: 1rem;
     padding: 8%;
+
+    @media (max-width: 1000px) {
+        height: 20.5rem;
+    }
+
+    @media (min-width: 800px) and (max-width: 999px) {
+        height: 22.5rem;
+    }
+
+    @media (max-width: 500px) and (max-width: 799px) {
+        height: 27rem;
+    }
 }
 
 .tour-text {
     opacity: .8;
+
+    @media (max-width: 500px) {
+
+    }
 }
 
     .tour-dropdown {
