@@ -396,6 +396,7 @@ table {
 @media (max-width: 480px) {
   .bg-about-img .description {
     margin-right: 26px;
+    opacity: 0.4;
   }
 }
 .bg-about-img .description h1 {
@@ -410,7 +411,7 @@ table {
 }
 .second-ab {
   background: #d3d2ce;
-  height: 440px;
+  height: auto;
 }
 @media (max-width: 480px) {
   .second-ab {
@@ -477,6 +478,56 @@ table {
 #bg-person-2 {
   background: white;
 }
+.registration-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 100%;
+}
+.registration-container .register-box {
+  margin: 40px 10px;
+  background: #659DBD;
+  max-width: 400px;
+  height: auto;
+  border-radius: 1rem;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+.registration-container .register-box input,
+.registration-container .register-box label {
+  width: 90%;
+  margin: 10px 10px 0px;
+}
+.registration-container .register-box input {
+  height: 40px;
+  border-radius: 0.3rem;
+}
+.registration-container .register-box h1 {
+  font-size: 3rem;
+  text-align: center;
+  line-height: 1;
+  font-family: 'Amatic SC', cursive;
+}
+.registration-container .register-box p {
+  text-align: center;
+}
+.registration-container .register-box .submit {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  margin: auto 10px;
+  align-items: center;
+}
+.registration-container .register-box .submit button {
+  padding: 10px;
+  min-width: 300px;
+  border-radius: 0.6rem;
+  border: 1px solid #659DBD;
+  background: #8D8741;
+  margin: 10px;
+  cursor: pointer;
+}
 .tour-content {
   background-image: url("/Images/andrew-stutesman-643239-unsplash.jpg");
   background-color: #f1f0b6;
@@ -529,103 +580,6 @@ table {
 .tour-button:hover {
   color: #659DBD;
   background-color: #121e24;
-}
-.container .guide {
-  width: 100%;
-}
-.border-color {
-  width: 100%;
-  height: 20px;
-  margin: 20px auto;
-  border-top: 3px solid #494721;
-  border-bottom: 3px solid #494721;
-  background-color: #8D8741;
-  filter: brightness(130%);
-}
-.border {
-  visibility: hidden;
-}
-.register-box {
-  width: 100%;
-}
-.register {
-  font-size: 2rem;
-  color: #8D8741;
-  filter: brightness(50%);
-  text-align: center;
-  margin: 40px 0px 30px 0px;
-}
-.guide-images {
-  width: 98%;
-  padding-left: 1.9%;
-  border: 1px solid red;
-}
-.guide-img {
-  width: 12%;
-  height: 150px;
-  margin: 1.9%;
-  text-align: center;
-  border-radius: 10px;
-  border: 1px solid #494721;
-}
-@media (max-width: 1000px) {
-  .guide-img {
-    width: 13.8%;
-    height: 120px;
-    margin: 1%;
-    text-align: center;
-  }
-}
-@media (min-width: 800px) and (max-width: 999px) {
-  .guide-img {
-    width: 13.55%;
-    height: 100px;
-    margin: 1%;
-    text-align: center;
-  }
-}
-@media (max-width: 500px) {
-  .guide-img {
-    margin: 0 auto;
-    width: 15%;
-    height: 70px;
-    text-align: center;
-  }
-}
-.tagline {
-  text-align: center;
-  font-size: 1.2rem;
-  line-height: 1.4;
-}
-.fill {
-  font-size: 1.2rem;
-  text-align: center;
-  margin: 1%;
-}
-.form-input {
-  font-size: 1.1rem;
-  text-align: center;
-  line-height: 1.4;
-}
-.register-button {
-  font-size: 1.1rem;
-  text-align: center;
-  margin: 2%;
-}
-.registerbtn {
-  font-size: 1.1rem;
-  text-align: center;
-  margin: 2%;
-  width: 160px;
-  height: 32px;
-  color: white;
-  background-color: #121e24;
-  border-radius: 5px;
-}
-.signin {
-  font-size: 1.1rem;
-  text-align: center;
-  margin: 1%;
 }
 footer {
   width: 100%;
