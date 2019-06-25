@@ -133,24 +133,45 @@ table {
 .width-100 {
   width: 100%;
 }
+.container {
+  width: 100%;
+}
+@media (min-width: 800px) and (max-width: 1000px) {
+  .container {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    margin: 0 auto;
+  }
+}
 .navigation {
   width: 100%;
   height: 60px;
+  margin: 0 auto;
   background-color: white;
 }
 .nav-logo .logo {
   color: #8D8741;
-  font-size: 55px;
+  font-size: 3.5rem;
   line-height: 60px;
   float: left;
-  padding: 10px 32% 0px 15px;
+  padding: 10px 13% 0px 1%;
+}
+@media (max-width: 500px) {
+  .nav-logo .logo {
+    font-size: 2.5rem;
+    padding: 10px 8px;
+  }
 }
 .nav ul {
   display: flex;
+  justify-content: space-evenly;
 }
 .nav ul li {
   list-style: none;
-  padding: 20px 10px 0px 0px;
+  padding: 20px 5px 0px 0px;
   position: relative;
 }
 .nav .nav-menu .links {
@@ -158,12 +179,27 @@ table {
   color: #8D8741;
   filter: brightness(50%);
   font-size: 18px;
-  padding: 24px 14px;
+  padding: 24px 0px 10px 0px ;
   text-decoration: none;
+}
+@media (max-width: 500px) {
+  .nav .nav-menu .links {
+    display: none;
+  }
 }
 .nav .nav-menu .links:hover {
   color: #659DBD;
   filter: brightness(100%);
+}
+@media (min-width: 800px) and (max-width: 1000px) {
+  span {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  span {
+    display: none;
+  }
 }
 /* --Login Dropdown Button-- */
 .login-btn {
@@ -171,30 +207,40 @@ table {
   height: 32px;
   font-size: 18px;
   color: white;
-  margin-top: 10px;
+  margin: 10px 0px 0px 20px;
   background-color: #8D8741;
   border-radius: 5px;
 }
+@media (max-width: 500px) {
+  .login-btn {
+    padding-left: 0px;
+  }
+}
 .login {
   position: relative;
-  display: inline-block;
+  display: block;
+  text-align: right;
 }
 .login-content {
   display: none;
   position: absolute;
   background-color: #f7f5ef;
-  min-width: 165px;
+  min-width: 145px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+}
+.login-content a.mobileMenu {
+  visibility: hidden;
 }
 .login-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
-  display: block;
+  display: inline-block;
 }
 .login-content a:hover {
   color: #FBEEC1;
+  min-width: 145px;
   background-color: #659DBD;
   filter: brightness(120%);
 }
@@ -261,6 +307,47 @@ table {
 .dest-img {
   width: 19.76%;
   height: 400px;
+}
+@media (max-width: 1000px) {
+  .dest-img {
+    margin: 0 auto;
+    width: 19.65%;
+    height: 290px;
+  }
+}
+@media (min-width: 800px) and (max-width: 999px) {
+  .dest-img {
+    margin: 0 auto;
+    width: 19.55%;
+    height: 275px;
+  }
+}
+@media (max-width: 500px) {
+  .dest-img {
+    margin: 0 auto;
+    width: 32.7%;
+    height: 265px;
+  }
+}
+@media (min-width: 800px) and (max-width: 1000px) {
+  #dest-1 {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 500px) {
+  #dest-1 {
+    display: none;
+  }
+}
+@media (min-width: 800px) and (max-width: 1000px) {
+  #dest-2 {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 500px) {
+  #dest-2 {
+    display: none;
+  }
 }
 .first-ab .ab-container {
   margin: 20px auto;
@@ -392,6 +479,60 @@ table {
 #bg-person-2 {
   background: white;
 }
+.tour-content {
+  background-image: url("/Images/andrew-stutesman-643239-unsplash.jpg");
+  background-color: #f1f0b6;
+  height: 18.3rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  margin-top: 1rem;
+  padding: 8%;
+}
+@media (max-width: 1000px) {
+  .tour-content {
+    height: 20.5rem;
+  }
+}
+@media (min-width: 800px) and (max-width: 999px) {
+  .tour-content {
+    height: 22.5rem;
+  }
+}
+@media (max-width: 500px) and (max-width: 799px) {
+  .tour-content {
+    height: 27rem;
+  }
+}
+.tour-text {
+  opacity: 0.8;
+}
+.tour-dropdown {
+  margin: 0.8%;
+  width: 400px;
+  height: 40px;
+  font-size: 18px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.tour-button {
+  margin: 0.8%;
+  width: 400px;
+  height: 40px;
+  color: #121e24;
+  font-size: 18px;
+  background-color: #659DBD;
+  /*rgb(67, 105, 128);*/
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.tour-button:hover {
+  color: #659DBD;
+  background-color: #121e24;
+}
+/* --Guide Page Registration Form-- */
 .registration-container {
   display: flex;
   flex-flow: column;
@@ -442,43 +583,102 @@ table {
   margin: 10px;
   cursor: pointer;
 }
-.tour-content {
-  background-image: url("/Images/andrew-stutesman-643239-unsplash.jpg");
-  background-color: #f1f0b6;
-  height: 19.5rem;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+/* --Guide Page Styling-- */
+.guide {
+  width: 100%;
+}
+.border-color {
+  width: 100%;
+  height: 20px;
+  margin: 20px auto;
+  border-top: 3px solid #494721;
+  border-bottom: 3px solid #494721;
+  background-color: #8D8741;
+  filter: brightness(130%);
+}
+.border {
+  visibility: hidden;
+}
+.register-box {
+  width: 100%;
+}
+.register {
+  font-size: 2rem;
+  color: #8D8741;
+  filter: brightness(50%);
   text-align: center;
-  margin-top: 1rem;
-  padding: 8%;
+  margin: 40px 0px 30px 0px;
 }
-.tour-text {
-  opacity: 0.8;
+.guide-images {
+  width: 98%;
+  padding-left: 1.9%;
 }
-.tour-dropdown {
-  margin: 0.8%;
-  width: 400px;
-  height: 40px;
-  font-size: 18px;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.guide-img {
+  width: 12%;
+  height: 150px;
+  margin: 1.9%;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #494721;
 }
-.tour-button {
-  margin: 0.8%;
-  width: 400px;
-  height: 40px;
-  color: #121e24;
-  font-size: 18px;
-  background-color: #659DBD;
-  /*rgb(67, 105, 128);*/
-  border-radius: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+@media (max-width: 1000px) {
+  .guide-img {
+    width: 13.8%;
+    height: 120px;
+    margin: 1%;
+    text-align: center;
+  }
 }
-.tour-button:hover {
-  color: #659DBD;
+@media (min-width: 800px) and (max-width: 999px) {
+  .guide-img {
+    width: 13.55%;
+    height: 100px;
+    margin: 1%;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .guide-img {
+    margin: 0 auto;
+    width: 15%;
+    height: 70px;
+    text-align: center;
+  }
+}
+.tagline {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+.fill {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 1%;
+}
+.form-input {
+  font-size: 1.1rem;
+  text-align: center;
+  line-height: 1.4;
+}
+.register-button {
+  font-size: 1.1rem;
+  text-align: center;
+  margin: 2%;
+}
+.registerbtn {
+  font-size: 1.1rem;
+  text-align: center;
+  margin: 2%;
+  width: 160px;
+  height: 32px;
+  color: white;
   background-color: #121e24;
+  border-radius: 5px;
+}
+.signin {
+  font-size: 1.1rem;
+  text-align: center;
+  margin: 1%;
 }
 footer {
   width: 100%;
@@ -488,6 +688,7 @@ footer {
   filter: brightness(130%);
   display: flex;
   justify-content: space-evenly;
+  border: 1px solid red;
 }
 footer a {
   color: #8D8741;

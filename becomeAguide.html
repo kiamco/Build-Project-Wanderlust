@@ -11,21 +11,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="./Carousel/carousel.js" async></script>
     <script src="./index.js" async></script>
+    <script src="./guide.js" async></script>
 
 </head>
 
-<body>
+<body class="container guide">
     <header>
         <div class="navigation">
             <div class="nav-logo">
-                <p class="logo">Wanderlust</p>
+                <a href="index.html"><h1 class="logo">Wanderlust</h1></a>
             </div>
             <div class="nav">
                 <ul class="nav-menu">
-                    <li><a class="links" href="index.html">Home</a></li>
-                    <li><a class="links" href="aboutUs.html">About Us</a></li>
-                    <li><a class="links" href="findTour.html">Find A Tour</a></li>
-                    <li><a class="links" href="becomeAguide.html">Become A Guide</a></li>
+                    <li><a class="links linksMenu" href="index.html">Home</a></li>
+                    <li><a class="links linksMenu" href="aboutUs.html">About <span>Us</span></a></li>
+                    <li><a class="links linksMenu" href="findTour.html">Find <span>A Tour</span></a></li>
+                    <li><a class="links linksMenu" href="becomeAguide.html">Become <span>A Guide</span></a></li>
                     <li>
                         <div class="login">
                             <button class="login-btn">Login</button>
@@ -33,6 +34,10 @@
                                 <a href="#">New Traveler</a>
                                 <a href="#">Wanderlust Traveler</a>
                                 <a href="#">Wanderlust Guide</a>
+                                <a class="mobileMenu" href="index.html">Home</a>
+                                <a class="mobileMenu" href="aboutUs.html">About Us</a>
+                                <a class="mobileMenu" href="findTour.html">Find A Tour</a>
+                                <a class="mobileMenu" href="becomeAguide.html">Become A Guide</a>
                             </div>
                         </div>
                     </li>
@@ -42,31 +47,48 @@
     </header>
 
 
-    <div class='registration-container'>
-
+    <div>
+        <div class="border-color"> 
+            <h1 class="border">Border</h1>
+        </div>
         <form action="">
             <div class='register-box'>
+                <div class="register">
+                    <h1>Register Here</h1>
+                </div>
+                <div class="guide-images">
+                    <a href="#"><img class="guide-img" id="guide-img-1" src="Images/Horizontal/anna-kolosyuk-481874-unsplash.jpg"></a>
+                    <a href="#"><img class="guide-img" id="guide-img-2" src="images/vertical/ben-dutton-1453427-unsplash.jpg"></a>
+                    <a href="#"><img class="guide-img" id="guide-img-3" src="Images/Horizontal/dan-gold-298710-unsplash.jpg"></a>
+                    <a href="#"><img class="guide-img" id="guide-img-4" src="Images/Horizontal/logan-easterling-1611640-unsplash.jpg"></a>
+                    <a href="#"><img class="guide-img" id="guide-img-5" src="Images/Horizontal/vishnu-r-nair-639172-unsplash.jpg"></a>
+                    <a href="#"><img class="guide-img" id="guide-img-6" src="Images/Horizontal/sarah-brown-1625209-unsplash.jpg"></a>
+                </div>
+                <div class="tagline">
+                    <p> Become a Wanderlust Guide and create wonderful experiences with travelers to your special city.</p>
+                    <p>Have a unique idea? Tell us all about it.</p>
+                </div>  
+                <div class="fill">
+                    <p>Fill out this form.</p>
+                </div>  
+                <div class="form-input">
+                    <label for="email"><b>Email</b></label> <br>
+                    <input type="text" placeholder="Enter Email" name="email" required> <br>
 
-                <h1>Become <br>A<br> Guide</h1>
-                <label for="email">Email</label>
-                <input type="text" placeholder="Enter Email" name="email" required>
+                    <label for="psw"><b>Password</b></label><br>
+                    <input type="password" placeholder="Enter Password" name="psw" required> <br>
 
-                <label for="psw">Password</label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
-
-                <label for="psw-repeat">Repeat Password</label>
-                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-
-                <div class='submit'>
+                    <label for="psw-repeat"><b>Repeat Password</b></label><br>
+                    <input type="password" placeholder="Repeat Password" name="psw-repeat" required> <br>
+                </div>
+                <div class="register-button">
                     <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
                     <button type="submit" class="registerbtn">Register</button>
                 </div>
-                <div class="signin-container">
-                    <p>Already have an account? <a href="#">Sign in</a>.</p>
-                </div>
             </div>
-
-
+            <div class="container signin">
+                <p>Already have an account? <a href="#">Sign in</a>.</p>
+            </div>
         </form>
 
 
