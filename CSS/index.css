@@ -151,7 +151,6 @@ table {
   height: 60px;
   margin: 0 auto;
   background-color: white;
-  border: 1px solid red;
 }
 .nav-logo .logo {
   color: #8D8741;
@@ -169,7 +168,6 @@ table {
 .nav ul {
   display: flex;
   justify-content: space-evenly;
-  border: 1px solid red;
 }
 .nav ul li {
   list-style: none;
@@ -230,6 +228,9 @@ table {
   min-width: 145px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+}
+.login-content a.mobileMenu {
+  visibility: hidden;
 }
 .login-content a {
   color: black;
@@ -478,6 +479,59 @@ table {
 #bg-person-2 {
   background: white;
 }
+.tour-content {
+  background-image: url("/Images/andrew-stutesman-643239-unsplash.jpg");
+  background-color: #f1f0b6;
+  height: 18.3rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  margin-top: 1rem;
+  padding: 8%;
+}
+@media (max-width: 1000px) {
+  .tour-content {
+    height: 20.5rem;
+  }
+}
+@media (min-width: 800px) and (max-width: 999px) {
+  .tour-content {
+    height: 22.5rem;
+  }
+}
+@media (max-width: 500px) and (max-width: 799px) {
+  .tour-content {
+    height: 27rem;
+  }
+}
+.tour-text {
+  opacity: 0.8;
+}
+.tour-dropdown {
+  margin: 0.8%;
+  width: 400px;
+  height: 40px;
+  font-size: 18px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.tour-button {
+  margin: 0.8%;
+  width: 400px;
+  height: 40px;
+  color: #121e24;
+  font-size: 18px;
+  background-color: #659DBD;
+  /*rgb(67, 105, 128);*/
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.tour-button:hover {
+  color: #659DBD;
+  background-color: #121e24;
+}
 /* --Guide Page Registration Form-- */
 .registration-container {
   display: flex;
@@ -530,7 +584,7 @@ table {
   cursor: pointer;
 }
 /* --Guide Page Styling-- */
-.container .guide {
+.guide {
   width: 100%;
 }
 .border-color {
@@ -558,7 +612,6 @@ table {
 .guide-images {
   width: 98%;
   padding-left: 1.9%;
-  border: 1px solid red;
 }
 .guide-img {
   width: 12%;
@@ -626,59 +679,6 @@ table {
   font-size: 1.1rem;
   text-align: center;
   margin: 1%;
-}
-.tour-content {
-  background-image: url("/Images/andrew-stutesman-643239-unsplash.jpg");
-  background-color: #f1f0b6;
-  height: 18.3rem;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  text-align: center;
-  margin-top: 1rem;
-  padding: 8%;
-}
-@media (max-width: 1000px) {
-  .tour-content {
-    height: 20.5rem;
-  }
-}
-@media (min-width: 800px) and (max-width: 999px) {
-  .tour-content {
-    height: 22.5rem;
-  }
-}
-@media (max-width: 500px) and (max-width: 799px) {
-  .tour-content {
-    height: 27rem;
-  }
-}
-.tour-text {
-  opacity: 0.8;
-}
-.tour-dropdown {
-  margin: 0.8%;
-  width: 400px;
-  height: 40px;
-  font-size: 18px;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.tour-button {
-  margin: 0.8%;
-  width: 400px;
-  height: 40px;
-  color: #121e24;
-  font-size: 18px;
-  background-color: #659DBD;
-  /*rgb(67, 105, 128);*/
-  border-radius: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.tour-button:hover {
-  color: #659DBD;
-  background-color: #121e24;
 }
 footer {
   width: 100%;
