@@ -59,7 +59,7 @@
     }
 
 span {
-    @media (min-width: 800px) and (max-width: 1000px) {
+    @media (min-width: 501px) and (max-width: 1000px) {
         display: none;
     }
 
@@ -99,6 +99,10 @@ span {
 
     a.mobileMenu {
         visibility: hidden;
+
+        @media (max-width: 500px) {
+            visibility: visible;
+        }
     }
 }
 
