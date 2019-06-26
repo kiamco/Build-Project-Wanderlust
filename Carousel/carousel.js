@@ -25,6 +25,7 @@ class Carousel {
             // updates backgournd and heading
             this.el.style.background = `url(${this.imgArr[this.currentIndex]}) center no-repeat`;
             this.el.style.backgroundSize = "cover";
+            this.el.style.transition = 'background 1s ease'
             this.heading[this.currentIndex].classList.toggle('active')
         }
 

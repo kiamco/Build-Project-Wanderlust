@@ -21,16 +21,30 @@
     a {
         text-decoration: none;
         color: black;
-        font-size: 5rem;
+        font-size: 7rem;
         display: none;
-        font-family: 'Amatic SC',cursive;
+        font-family: 'Amatic SC', cursive;
         padding: 5px;
-        // border: white solid 5px;
-        border-radius: 1rem;
-        
     }
 
     .active {
         display: block;
     }
+
+}
+.wrapper{
+    height: 500px;
+    width: 100%;
+}
+.fullscreen-bg {
+    position: absolute;
+    right: 0;
+    bottom: -130px;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background-size:  cover;
+    overflow: hidden;
 }

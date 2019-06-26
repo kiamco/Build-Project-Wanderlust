@@ -151,6 +151,7 @@ table {
   height: 60px;
   margin: 0 auto;
   background-color: white;
+  padding-bottom: 20px;
 }
 .nav-logo .logo {
   color: #8D8741;
@@ -274,14 +275,29 @@ table {
 .carousel a {
   text-decoration: none;
   color: black;
-  font-size: 5rem;
+  font-size: 7rem;
   display: none;
   font-family: 'Amatic SC', cursive;
   padding: 5px;
-  border-radius: 1rem;
 }
 .carousel .active {
   display: block;
+}
+.wrapper {
+  height: 500px;
+  width: 100%;
+}
+.fullscreen-bg {
+  position: absolute;
+  right: 0;
+  bottom: -130px;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background-size: cover;
+  overflow: hidden;
 }
 /* --Destination-- */
 .destination-box {
