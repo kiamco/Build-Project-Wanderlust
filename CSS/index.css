@@ -354,18 +354,18 @@ table {
   width: 800px;
   max-width: 1000px;
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .first-ab .ab-container {
-    margin: auto 24px;
+    width: 100%;
   }
 }
 .first-ab .ab-container .mission {
   text-align: left;
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .first-ab .ab-container .mission {
     text-align: center;
-    width: 300px;
+    width: 100%;
   }
 }
 .first-ab .ab-container .mission h1 {
@@ -378,7 +378,7 @@ table {
 .bg-about-img {
   background: url(/Images/arthur-poulin-96074-unsplash.jpg) center no-repeat, rgba(160, 158, 73, 0.76);
   background-size: cover;
-  height: 400px;
+  min-height: 400px;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -388,15 +388,21 @@ table {
   flex-direction: row;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .bg-about-img {
+    justify-content: center;
+    width: 100%;
+  }
+}
 .bg-about-img .description {
   background: #f1f0b6;
   opacity: 0.6;
   margin-right: 72px;
   height: 200px;
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .bg-about-img .description {
-    margin-right: 26px;
+    margin-right: 0px;
     opacity: 0.4;
   }
 }
@@ -414,7 +420,7 @@ table {
   background: #d3d2ce;
   height: auto;
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .second-ab {
     max-width: 480px;
     margin: auto 10px;
@@ -423,6 +429,11 @@ table {
 .second-ab .people {
   width: 800px;
   margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .second-ab .people {
+    width: 100%;
+  }
 }
 .second-ab .people h1 {
   text-align: center;
@@ -434,9 +445,12 @@ table {
   flex-flow: row no-wrap;
   justify-content: space-between;
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .second-ab .people .person {
     flex-flow: column wrap;
+    width: 100%;
+    padding-bottom: 20px;
+    align-items: center;
   }
 }
 .second-ab .people .person img {
@@ -446,22 +460,20 @@ table {
   border-radius: 12rem;
   margin-top: 50px;
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .second-ab .people .person img {
-    width: 15%;
-    height: 119px;
-    margin-left: 121px;
+    height: 201px;
   }
 }
 .second-ab .people .person .person-info {
   width: 48%;
   margin-top: 125px;
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .second-ab .people .person .person-info {
-    margin: 10px auto auto 10px;
     text-align: center;
-    width: 40%;
+    width: 100%;
+    margin-top: 0px;
   }
 }
 .person-info h2 {
@@ -471,13 +483,21 @@ table {
 #person-2 {
   flex-flow: row-reverse;
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   #person-2 {
     flex-flow: column wrap;
   }
 }
 #bg-person-2 {
   background: white;
+}
+.main-container {
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .main-container {
+    margin: auto 10px;
+  }
 }
 .tour-content {
   background-image: url("/Images/andrew-stutesman-643239-unsplash.jpg");
