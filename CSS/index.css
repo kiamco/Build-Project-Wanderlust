@@ -428,12 +428,21 @@ table {
   color: white;
   text-align: center;
 }
+@media (max-width: 500px) {
+  .first-ab .ab-container .mission h1 {
+    color: black;
+  }
+}
 .first-ab .ab-container .mission p {
   line-height: 1.7;
   color: white;
 }
+@media (max-width: 500px) {
+  .first-ab .ab-container .mission p {
+    color: black;
+  }
+}
 .bg-about-img {
-  background-size: cover;
   min-height: 175px;
   width: 100%;
   position: relative;
@@ -446,6 +455,8 @@ table {
 }
 @media (max-width: 500px) {
   .bg-about-img {
+    background: url(/Images/arthur-poulin-96074-unsplash.jpg) center no-repeat;
+    background-size: cover;
     justify-content: center;
     width: 100%;
   }
@@ -558,6 +569,11 @@ table {
 }
 .wrapper {
   width: 100%;
+}
+@media (max-width: 500px) {
+  .wrapper {
+    display: none;
+  }
 }
 .wrapper .fullscreen-bg {
   position: absolute;
