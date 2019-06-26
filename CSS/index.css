@@ -191,7 +191,7 @@ table {
   color: #659DBD;
   filter: brightness(100%);
 }
-@media (min-width: 800px) and (max-width: 1000px) {
+@media (min-width: 501px) and (max-width: 1000px) {
   span {
     display: none;
   }
