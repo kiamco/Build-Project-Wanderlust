@@ -17,7 +17,7 @@
 }
 
 .nav-logo .logo {
-    color: #8D8741;
+    color: @darkGreen;
     font-size: 3.5rem;
     line-height: 60px;
     float: left;
@@ -76,6 +76,7 @@ span {
     color: white;
     margin: 10px 0px 0px 20px;
     background-color: @darkGreen;
+    border: 1px solid @border-lines;
     border-radius: 5px;
 
     @media (max-width: 500px) {
@@ -92,7 +93,7 @@ span {
 .login-content {
     display: none;
     position: absolute;
-    background-color: rgb(247, 245, 239);
+    background-color: @login-background;
     min-width: 145px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -125,5 +126,5 @@ span {
 }
 
 .login:hover .login-btn {
-    background-color: rgb(189, 180, 87);
+    background-color: @login-hover;
 }
