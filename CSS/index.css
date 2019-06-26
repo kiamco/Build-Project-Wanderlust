@@ -290,22 +290,6 @@ table {
 .carousel .active {
   display: block;
 }
-.wrapper {
-  height: 500px;
-  width: 100%;
-}
-.fullscreen-bg {
-  position: absolute;
-  right: 0;
-  bottom: -130px;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-  background-size: cover;
-  overflow: hidden;
-}
 /* --Destination-- */
 .destination-box {
   height: 5.65rem;
@@ -441,14 +425,16 @@ table {
 .first-ab .ab-container .mission h1 {
   margin: 10px 10px;
   font-size: 2rem;
+  color: white;
+  text-align: center;
 }
 .first-ab .ab-container .mission p {
-  line-height: 1.5;
+  line-height: 1.7;
+  color: white;
 }
 .bg-about-img {
-  background: url(/Images/arthur-poulin-96074-unsplash.jpg) center no-repeat;
   background-size: cover;
-  min-height: 400px;
+  min-height: 175px;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -469,6 +455,7 @@ table {
   opacity: 0.6;
   margin-right: 72px;
   height: 200px;
+  margin-top: 20px;
 }
 @media (max-width: 500px) {
   .bg-about-img .description {
@@ -488,7 +475,7 @@ table {
 }
 .second-ab {
   background: #d3d2ce;
-  height: auto;
+  min-height: 500px;
 }
 @media (max-width: 500px) {
   .second-ab {
@@ -568,6 +555,21 @@ table {
   .main-container {
     margin: auto 10px;
   }
+}
+.wrapper {
+  width: 100%;
+}
+.wrapper .fullscreen-bg {
+  position: absolute;
+  right: 0;
+  bottom: -130px;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background-size: cover;
+  overflow: hidden;
 }
 .tour-content {
   background-image: url("/Images/andrew-stutesman-643239-unsplash.jpg");
