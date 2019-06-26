@@ -17,7 +17,7 @@
 }
 
 .nav-logo .logo {
-    color: #8D8741;
+    color: @darkGreen;
     font-size: 3.5rem;
     line-height: 60px;
     float: left;
@@ -42,6 +42,7 @@
 
 .nav .nav-menu .links {
     display: block;
+    text-align: center;
     color: @darkGreen;
     filter: brightness(50%);
     font-size: 18px;
@@ -59,7 +60,7 @@
     }
 
 span {
-    @media (min-width: 800px) and (max-width: 1000px) {
+    @media (min-width: 501px) and (max-width: 1000px) {
         display: none;
     }
 
@@ -76,6 +77,7 @@ span {
     color: white;
     margin: 10px 0px 0px 20px;
     background-color: @darkGreen;
+    border: 1px solid @border-lines;
     border-radius: 5px;
 
     @media (max-width: 500px) {
@@ -92,13 +94,17 @@ span {
 .login-content {
     display: none;
     position: absolute;
-    background-color: rgb(247, 245, 239);
+    background-color: @login-background;
     min-width: 145px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 
     a.mobileMenu {
         visibility: hidden;
+
+        @media (max-width: 500px) {
+            visibility: visible;
+        }
     }
 }
 
@@ -121,5 +127,5 @@ span {
 }
 
 .login:hover .login-btn {
-    background-color: rgb(189, 180, 87);
+    background-color: @login-hover;
 }

@@ -1,5 +1,4 @@
 .first-ab {
-
     .ab-container {
         margin: 20px auto;
         width: 800px;
@@ -31,7 +30,7 @@
 }
 
 .bg-about-img {
-    background: url(/Images/arthur-poulin-96074-unsplash.jpg) center no-repeat, rgba(160, 158, 73, 0.76);
+    background: url(/Images/arthur-poulin-96074-unsplash.jpg) center no-repeat;
     background-size: cover;
     min-height: 400px;
     width: 100%;
@@ -46,7 +45,7 @@
     }
 
     .description {
-        background: rgb(241, 240, 182);
+        background: @description-background;
         opacity: .6;
         margin-right: 72px;
         height: 200px;
@@ -63,19 +62,17 @@
             font-size: 5rem;
             text-align: center;
             margin: 20px 20px 0;
-            color: rgb(19, 19, 19);
+            color: @h1-color;
             ;
             font-weight: 600;
-
         }
     }
 }
 
 .second-ab {
-    background: rgb(211, 210, 206);
+    background: @second-ab;
     height: auto;
-
-
+    
     @media @mobile {
         max-width: 480px;
         margin: auto 10px;
@@ -114,15 +111,14 @@
                 height: 379px;
                 border-radius: 12rem;
                 margin-top: 50px;
+            
 
                 @media @mobile {
                     height: 201px;
-                  
                 }
-
             }
 
-            .person-info {
+           .person-info {
                 width: 48%;
                 margin-top: 125px;
 
@@ -131,7 +127,7 @@
                     width: 100%;
                     margin-top: 0px;
                 }
-            }
+            }    
         }
     }
 }
@@ -155,8 +151,7 @@
     background: white;
 }
 
-
-.main-container{
+.main-container {
     width: 100%;
 
     @media @mobile{
