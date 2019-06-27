@@ -151,6 +151,7 @@ table {
   height: 60px;
   margin: 0 auto;
   background-color: white;
+  padding-bottom: 20px;
 }
 .nav-logo .logo {
   color: #4a6803;
@@ -281,11 +282,10 @@ table {
 .carousel a {
   text-decoration: none;
   color: black;
-  font-size: 5rem;
+  font-size: 7rem;
   display: none;
   font-family: 'Amatic SC', cursive;
   padding: 5px;
-  border-radius: 1rem;
 }
 .carousel .active {
   display: block;
@@ -425,14 +425,25 @@ table {
 .first-ab .ab-container .mission h1 {
   margin: 10px 10px;
   font-size: 2rem;
+  color: white;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .first-ab .ab-container .mission h1 {
+    color: black;
+  }
 }
 .first-ab .ab-container .mission p {
-  line-height: 1.5;
+  line-height: 1.7;
+  color: white;
+}
+@media (max-width: 500px) {
+  .first-ab .ab-container .mission p {
+    color: black;
+  }
 }
 .bg-about-img {
-  background: url(/Images/arthur-poulin-96074-unsplash.jpg) center no-repeat;
-  background-size: cover;
-  min-height: 400px;
+  min-height: 175px;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -444,6 +455,8 @@ table {
 }
 @media (max-width: 500px) {
   .bg-about-img {
+    background: url(/Images/arthur-poulin-96074-unsplash.jpg) center no-repeat;
+    background-size: cover;
     justify-content: center;
     width: 100%;
   }
@@ -453,6 +466,7 @@ table {
   opacity: 0.6;
   margin-right: 72px;
   height: 200px;
+  margin-top: 20px;
 }
 @media (max-width: 500px) {
   .bg-about-img .description {
@@ -472,7 +486,7 @@ table {
 }
 .second-ab {
   background: #d3d2ce;
-  height: auto;
+  min-height: 500px;
 }
 @media (max-width: 500px) {
   .second-ab {
@@ -552,6 +566,26 @@ table {
   .main-container {
     margin: auto 10px;
   }
+}
+.wrapper {
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .wrapper {
+    display: none;
+  }
+}
+.wrapper .fullscreen-bg {
+  position: absolute;
+  right: 0;
+  bottom: -130px;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background-size: cover;
+  overflow: hidden;
 }
 .tour-content {
   background-image: url("/Images/andrew-stutesman-643239-unsplash.jpg");

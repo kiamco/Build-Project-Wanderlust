@@ -1,4 +1,5 @@
 .first-ab {
+
     .ab-container {
         margin: 20px auto;
         width: 800px;
@@ -19,10 +20,24 @@
             h1 {
                 margin: 10px 10px;
                 font-size: 2rem;
+                color: white;
+                text-align: center;
+
+                @media @mobile {
+                    color: black;
+                }
+
             }
 
             p {
-                line-height: 1.5;
+                line-height: 1.7;
+                color: white;
+
+                @media @mobile {
+                    color: black;
+                }
+
+
             }
         }
 
@@ -30,9 +45,8 @@
 }
 
 .bg-about-img {
-    background: url(/Images/arthur-poulin-96074-unsplash.jpg) center no-repeat;
-    background-size: cover;
-    min-height: 400px;
+    // background: url(/Images/arthur-poulin-96074-unsplash.jpg) center no-repeat;
+    min-height: 175px;
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -40,6 +54,8 @@
     align-items: center;
 
     @media @mobile {
+        background: url(/Images/arthur-poulin-96074-unsplash.jpg) center no-repeat;
+        background-size: cover;
         justify-content: center;
         width: 100%;
     }
@@ -49,6 +65,8 @@
         opacity: .6;
         margin-right: 72px;
         height: 200px;
+        margin-top: 20px;
+
 
         @media @mobile {
             margin-right: 0px;
@@ -63,7 +81,7 @@
             text-align: center;
             margin: 20px 20px 0;
             color: @h1-color;
-            ;
+
             font-weight: 600;
         }
     }
@@ -71,8 +89,9 @@
 
 .second-ab {
     background: @second-ab;
-    height: auto;
-    
+    min-height: 500px;
+
+
     @media @mobile {
         max-width: 480px;
         margin: auto 10px;
@@ -111,14 +130,14 @@
                 height: 379px;
                 border-radius: 12rem;
                 margin-top: 50px;
-            
+
 
                 @media @mobile {
                     height: 201px;
                 }
             }
 
-           .person-info {
+            .person-info {
                 width: 48%;
                 margin-top: 125px;
 
@@ -127,7 +146,7 @@
                     width: 100%;
                     margin-top: 0px;
                 }
-            }    
+            }
         }
     }
 }
@@ -154,8 +173,29 @@
 .main-container {
     width: 100%;
 
-    @media @mobile{
+    @media @mobile {
         margin: auto 10px;
 
+    }
+}
+
+.wrapper {
+    width: 100%;
+
+    @media @mobile {
+        display: none;
+    }
+
+    .fullscreen-bg {
+        position: absolute;
+        right: 0;
+        bottom: -130px;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        background-size: cover;
+        overflow: hidden;
     }
 }
