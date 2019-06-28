@@ -155,6 +155,7 @@ table {
 }
 .nav-logo .logo {
   color: #4a6803;
+  font-family: 'Bungee Shade', cursive;
   font-size: 3.5rem;
   line-height: 60px;
   float: left;
@@ -361,6 +362,13 @@ table {
 .dest-img {
   width: 19.76%;
   height: 400px;
+}
+@media (min-width: 1001px) and (max-width: 1300px) {
+  .dest-img {
+    margin: 0 auto;
+    width: 19.66%;
+    height: 350px;
+  }
 }
 @media (max-width: 1000px) {
   .dest-img {
@@ -698,7 +706,7 @@ table {
 .border-color {
   width: 100%;
   height: 20px;
-  margin: 20px 0px 20px 0px;
+  margin: 10px 0px 20px 0px;
   border-top: 3px solid #233101;
   border-bottom: 3px solid #233101;
   background-color: #4a6803;
