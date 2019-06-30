@@ -11,20 +11,12 @@ registerButton.addEventListener("mouseover", function( event ) {
 
 let guideImages = document.querySelectorAll(".guide-img");
 guideImages.forEach(function (images) {
-    images.addEventListener("click", function(event) {
-      event.target.style.opacity = "0.5";
-    
-    images.addEventListener("click", function(event) {
-      event.target.style.opacity = "";
-    })
-  /*  setTimeout(function() {
-        event.target.style.opacity = '';
-    }, 500);
-    }, false);*/
-})})
-
-
-/*document.getElementById("guide-img-1").addEventListener("click", function(event) {
-    event.innerHTML = "Artsy Fun";
-});*/
+  images.addEventListener("click", function(event) {
+    event.target.style.opacity = "0.5";
+  
+  images.addEventListener("click", function(event) {
+    event.target.style.opacity = "";
+  })
+  })
+})
 
