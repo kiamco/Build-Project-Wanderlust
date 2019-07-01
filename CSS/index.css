@@ -452,7 +452,7 @@ table {
   }
 }
 .first-ab .ab-container .mission {
-  text-align: left;
+  text-align: center;
 }
 @media (max-width: 500px) {
   .first-ab .ab-container .mission {
